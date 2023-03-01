@@ -1,0 +1,724 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_dataContract",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_structs",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "hero",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint16",
+						"name": "numProject",
+						"type": "uint16"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					}
+				],
+				"name": "Action",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "CheckRegister",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+<<<<<<< HEAD
+						"internalType": "string",
+						"name": "_strongSide",
+						"type": "string"
+					}
+				],
+				"name": "addStrongSide",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+=======
+>>>>>>> e92265b30ab086fe32028c67497a0a3d05936434
+						"internalType": "string",
+						"name": "_task",
+						"type": "string"
+					}
+				],
+				"name": "addTaskInProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "auth",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "a",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_goal",
+						"type": "string"
+					}
+				],
+				"name": "changeGoalProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_roleInProject",
+						"type": "string"
+					}
+				],
+				"name": "changeRole",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numStrongSide",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string",
+						"name": "_newStrongSide",
+						"type": "string"
+					}
+				],
+				"name": "changeStrongSide",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_numTask",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_newTask",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_date",
+						"type": "uint256"
+					}
+				],
+				"name": "changeTaskInProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkNumArhiveProject",
+				"outputs": [
+					{
+						"internalType": "uint16[]",
+						"name": "archiveProject",
+						"type": "uint16[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "checkProject",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "goal",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mentor",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "status",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string[]",
+						"name": "tasksMembers",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "roleMembers",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numActiveProject",
+						"type": "uint16"
+<<<<<<< HEAD
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_num",
+						"type": "uint16"
+					}
+				],
+				"name": "checkProjectNum",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "goal",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mentor",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "status",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string[]",
+						"name": "tasksMembers",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "roleMembers",
+						"type": "string"
+=======
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_num",
+						"type": "uint16"
+					}
+				],
+				"name": "checkProjectNum",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "goal",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mentor",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "status",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string[]",
+						"name": "tasksMembers",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "roleMembers",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "checkRegister",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+>>>>>>> e92265b30ab086fe32028c67497a0a3d05936434
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					}
+				],
+				"name": "checkStudent",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "classLetter",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "email",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "strongSides",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint8",
+						"name": "class",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_pass",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_num",
+						"type": "uint16"
+					}
+				],
+				"name": "checkTaskDeadline",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "tasksMembers",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "deadLine",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "ready",
+						"type": "uint16[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "constructData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_nameProject",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_loginMentor",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numLaboratory",
+						"type": "uint16"
+					}
+				],
+				"name": "createProjectForStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					}
+				],
+				"name": "myTransfer",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_class",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_classLetter",
+						"type": "string"
+					}
+				],
+				"name": "registrationForStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Student.sol": "Student"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GlobalStorage.sol": {
+<<<<<<< HEAD
+			"keccak256": "0xb425a743e7638f9369ac5cd3e03feb4a387792f52e5b0402010bd2669d28d6ef",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://84bd4ccc12f2fc4c76be719f6904aa9d9527ba30bc48cb7c7baa2fc4b702bff1",
+				"dweb:/ipfs/QmbgWmCMRDXiKrhRCrpcFStKoXaeQFWvf6xN68ir7tvCwU"
+			]
+		},
+		"MakeStruct.sol": {
+			"keccak256": "0xb081ed15c0eead46142c0c05a22186bf1bbe5be278f6f00a751e5b36efbe082b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d32fba8b9bb2f3cb43d490cbf9759dfb0f6fb81c6cc0608bf7c5141aa76b11e3",
+				"dweb:/ipfs/QmcDNZxjD5RxeGYJwyfMAzbLSLtqW3ih45fGJtqrSM2HkE"
+			]
+		},
+		"Student.sol": {
+			"keccak256": "0xdf49f91ede52bbea480255f8fa003d0093adce87ad8fd70e615f9227a934edeb",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8c36fa46fa97c8a1e6465dfb5c78f0d073ab121293d630f48b1bfc27b472251a",
+				"dweb:/ipfs/QmRu7B6Ym5MNjmqc2fHVhWeQUGFMhydoyLcpxJLL5DEkhS"
+			]
+		},
+		"Support.sol": {
+			"keccak256": "0x2bdb828de8ea4e2ec1c32cb6c45769a87316152fe1f7aafbccca4ebf497f0f07",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://decac776144af17331e76dff4bc38ce1a9555f9faa9582c0f232d609215f019f",
+				"dweb:/ipfs/QmSEUuxefA7CjpCPMmtr5b8gCAF8yCHkhchzjpwJkK1dgc"
+=======
+			"keccak256": "0xde5809dc9ce3410f978e454549702b917d64943e1842a5e4ff5d79fc0bf359a8",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://dacc973bc3873e5f5bc25e064e74c9e5a45ad8757c25b2a86b7aa6f19f433099",
+				"dweb:/ipfs/QmRKMPP34BWWd5php8s8YWgpk7pCzSWNbAqJ5BMNMuJDHL"
+			]
+		},
+		"MakeStruct.sol": {
+			"keccak256": "0x585bcf7bbc9d762ff40611abac719ef60c279d054033969d1f1e86273e09c94e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3595a543fc1d248d98a582d9e0c7a03fb0061afafcfd2c2dc0d29cad3cfe147e",
+				"dweb:/ipfs/QmQvPhSpw2jBwLRi8M5krZYMENzJFw2mBq4gcgnV3x2wdJ"
+			]
+		},
+		"Student.sol": {
+			"keccak256": "0xf398e4a6e88d053cefb1c34c7c9dafad68fafda3ca439bf97f06f7c3f57d96c6",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6e8f9212e0dbfc2cc0e02f931055c5c672feef1f6ced31d16af125bd422643ee",
+				"dweb:/ipfs/QmU67arDEuRrNDTeRMYyVt6afBM8ib4gYkpo9bPfWz5kYq"
+			]
+		},
+		"Support.sol": {
+			"keccak256": "0x533551490b72c87c7cd318ee39cc4dd565589cd10e12c6d4607e41c00455baa7",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5d14283ad92ae7d24f9441baa4259cb65b8f02903d541f3632342f23358593a6",
+				"dweb:/ipfs/QmPNi9AD7SGvvGcG5TKMZwwhdXNemxNUXvotfkmzNheh8e"
+>>>>>>> e92265b30ab086fe32028c67497a0a3d05936434
+			]
+		}
+	},
+	"version": 1
+}

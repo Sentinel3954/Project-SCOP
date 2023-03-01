@@ -1,0 +1,82 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract exp1",
+						"name": "_EXP1",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newNum",
+						"type": "uint256"
+					}
+				],
+				"name": "changeNum",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"exp2.sol": "exp2"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 2000000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"exp1.sol": {
+			"keccak256": "0x6142ee97fa1f8322b0994b25a04739b15aad7c6727fa0aae121265a525e7853c",
+			"urls": [
+				"bzz-raw://766c1e5895ae1ba0d21e4373f6ad7e3e94e462c57ccaa57f95a040c559a58f6c",
+				"dweb:/ipfs/QmY5vY6jwCHXhkLxjMMYtHfaf7CxkPBXDNFiSwZrFQYpJF"
+			]
+		},
+		"exp2.sol": {
+			"keccak256": "0xd36b0f71d5ba695cb3b09c701eb3a06e60a8374a59a3c55e38a67be2ada683fc",
+			"urls": [
+				"bzz-raw://f400280a686da20fe848ec80950dc5675310a68f7a509aeea7d7cf17058721b6",
+				"dweb:/ipfs/QmVnYFqDxHoUyprhDbae9Sb3UVeTjzF3w7mQfLVFtWLgvs"
+			]
+		}
+	},
+	"version": 1
+}

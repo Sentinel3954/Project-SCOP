@@ -1,0 +1,65 @@
+{% extends 'template.html' %}
+
+{% block  title %}
+    <title>проект</title>
+{% endblock  %}
+
+{% block content_0 %}
+<div class="head_cab">Управление проектом
+    <button class="btn btn-secondary btn_ctr ext_btn">X</button>
+</div>
+<div class="main_box_cab main_box_cab_{{3}}">
+    <div class="info_head info_head_{{3}}">Информация о проекте</div>
+    <div class="info_std info_std_{{3}}">
+        <p>Название проекта: {{project_name}}</p>
+        <p>Цель: {{Goal}}</p>
+        <p>Лаборатория: {{laboratorie}}</p>
+        <p>Куратор: {{tutor}}</p>
+        <p>Роль: {{role}}</p>
+
+        <br>
+        {% for cat, msg in get_flashed_messages(True) %}
+            <div class="{{cat}} status_class_0">{{msg}}</div>
+        {% endfor %}
+    </div>
+<div class="info_head info_head_1 strng_hd strng_hd_0 info_head_{{len_tasks}}">Изменить проект</div>
+    <div class="info_std info_std_{{len_tasks}} strng_sd strng_sd_0">
+        <form action="{{url_for('change_goal_project')}}" method="post">
+            <input class = "inp_sd inp_sd_1" value="{{Goal}}" placeholder="Цель" name="goal">
+            <button type="submit" class="btn btn-secondary btn_sd_1">Изменить цель</button>
+        </form>
+        <form action="{{url_for('create_role')}}" method="post">
+            <input class = "inp_sd inp_sd_1" value="{{role}}" name="role" placeholder="Роль">
+            <button type="submit" class="btn btn-secondary btn_sd_1">Изменить роль</button>
+        </form>
+        <form action="{{url_for('create_task')}}" method="post">
+            <input class = "inp_sd inp_sd_2" name="task" placeholder="Задача">
+            <input type="date" class = "inp_sd inp_sd_2" name="date" placeholder="Задача">
+            <button type="submit" class="btn btn-secondary btn_sd_1">Добавить задачу</button>
+        </form>
+        
+        {%for k, task in slovar.items()%}
+            {% if task!=[] %}
+            {%if task[2]=="checked" %}
+                {% set clc_r_o = "inp_sd_bl" %}
+                {% set read_only = "readonly" %}
+                {% set btn_dis = "disabled" %}
+            {% endif %}
+            <div>
+                <form action="{{url_for('changeTaskInProject')}}" method="post">
+                    <input class = "inp_sd inp_sd_4 {{clc_r_o}}" readonly value="{{k}}" name="indexxx">
+                    <input class = "inp_sd inp_sd_5 {{clc_r_o}}" {{read_only}} value="{{task[0]}}" name="task">
+                    <!-- <input class = "inp_sd inp_sd_1" value="{{s}}"> -->
+                    <button type="submit" class="btn btn-secondary btn_sd_1 " {{btn_dis}}>Изменить</button><br>
+                    <input type="date" class="inp_sd inp_sd_2 {{clc_r_o}}" readonly value="{{task[1]}}">
+                    <label class="lbl_0">Выполнено</label>
+                <input type="checkbox" readonly class="inp_sd inp_sd_3" {{task[2]}} onclick="return false;">
+                </form>
+            </div>
+            {% endif %}
+        {%endfor%}
+        <br>
+    </div>
+
+</div>
+{% endblock content_0 %}

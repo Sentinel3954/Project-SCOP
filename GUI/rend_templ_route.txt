@@ -1,0 +1,16 @@
+http://127.0.0.1:5000
+http://127.0.0.1:5000/walet
+http://127.0.0.1:5000/go_to_auth
+http://127.0.0.1:5000/check_email
+http://127.0.0.1:5000/reg_teacher_check
+http://127.0.0.1:5000/go_to_teacher_cabinet
+http://127.0.0.1:5000/go_to_student_cabinet
+http://127.0.0.1:5000/go_to_reg_student
+http://127.0.0.1:5000/reg_student
+http://127.0.0.1:5000/go_to_create_projects
+http://127.0.0.1:5000/create_strong_side
+http://127.0.0.1:5000/proj_student
+http://127.0.0.1:5000/create_project_tut
+http://127.0.0.1:5000/proj_tutor
+http://127.0.0.1:5000/proj_all_tutor
+http://127.0.0.1:5000/create_login_student

@@ -1,0 +1,56 @@
+{% extends 'template.html' %}
+
+{% block  title %}
+    <title>Создать проект</title>
+{% endblock  %}
+
+{% block content_0 %}
+<div class="head_cab">Создать Проект
+    <button class="btn btn-secondary btn_ctr ext_btn">X</button>
+</div>
+<div class="main_box_cab">
+<div class="info_head info_head_1 strng_hd">Создать проект</div>
+    <div class="info_std strng_sd">
+    <form action="{{url_for('create_project')}}" method="post">
+            <input class=" inp_sd inp_sd_1" type="text" name="name_project" placeholder="Название проекта">
+            <input class="inp_sd inp_sd_1" type="text" name="login" placeholder="Логин Учителя">
+            <select class="form-select" name="lab">
+                <option selected disabled>Лаборотария</option>
+                {% for i, k in dict_lab.items() %}
+                <option  value="{{i}}">{{k}}</option>
+                {% endfor %}
+            </select>
+            <label for="interest" class="mb-3">Интересы(Чтобы выбрать несколько значений зажмите Ctrl)</label>
+            <select class="form-select" id="interest" name="interest" multiple>
+                <option selected disabled>Интересы</option>
+                {% for i, k in dict_sub.items() %}
+                <option  value="{{i}}">{{k}}</option>
+                {% endfor %}
+            </select>
+            <br>
+            
+            <button type="submit" class="btn btn-secondary btn_sd_0 btn_test">Создать</button>
+  
+    </form>
+    {% for cat, msg in get_flashed_messages(True) %}
+        <div class="{{cat}} status_class_0">{{msg}}</div>
+    {% endfor %}
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+      <p>{{ message }}</p>
+        {% endif %}
+    {% endwith %}
+    <!-- <script>
+    function showSelect() {
+        let select = document.getElementById("lab");
+        if (select.style.display === "none") {
+            select.style.display = "block";
+        } else {
+            select.style.display = "none";
+        }
+        }
+    </script> -->
+</div>
+</div>
+
+{% endblock content_0 %}

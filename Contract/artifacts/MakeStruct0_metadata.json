@@ -1,0 +1,1134 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_dataContract",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "hero",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "numProject",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					}
+				],
+				"name": "Action",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newContract",
+						"type": "address"
+					}
+				],
+				"name": "addAddressContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+<<<<<<< HEAD
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "addTaskInProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+=======
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwnerContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_oldContract",
+						"type": "address"
+					}
+				],
+				"name": "deleteAddressContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getAddressToLogin",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAddressesContract",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getBelongProjects",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "owners",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					}
+				],
+				"name": "getDeadLineInProject",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "deadLineProject",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+<<<<<<< HEAD
+=======
+				"inputs": [],
+				"name": "getDepartments",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "departments",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLaboratories",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "laboratories",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_loginUser",
+						"type": "string"
+					}
+				],
+				"name": "getLoginToAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwnerContract",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getPassword",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "pass",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "getProjectStruct",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "goal",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "mentor",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "members",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "needKnowledge",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "uint8",
+						"name": "statusProject",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+<<<<<<< HEAD
+				"name": "getQuantityLaboratories",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "quantityLaboratories",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+=======
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+				"name": "getQuantityProjects",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "quantityProjects",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+<<<<<<< HEAD
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					}
+				],
+				"name": "getQuantityStrongSides",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "quantityStrongSides",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					}
+				],
+				"name": "getQuantityTasks",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "quantityTask",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+=======
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+<<<<<<< HEAD
+						"name": "_numTask",
+=======
+						"name": "_num_task",
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+						"type": "uint8"
+					}
+				],
+				"name": "getReadyOneTaskProject",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "readyTaskProject",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					}
+				],
+				"name": "getReadyTaskProject",
+				"outputs": [
+					{
+						"internalType": "uint16[]",
+						"name": "readyTasksProject",
+						"type": "uint16[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					}
+				],
+				"name": "getRoleUser",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "role",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+<<<<<<< HEAD
+=======
+				"inputs": [],
+				"name": "getSchoolSubjects",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "schoolSubjects",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					}
+				],
+				"name": "getStatusAddress",
+				"outputs": [
+					{
+						"internalType": "enum MakeStruct0.StatusAddress",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					}
+				],
+				"name": "getStudentStruct",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "classLetter",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "strongSides",
+						"type": "string[]"
+					},
+					{
+<<<<<<< HEAD
+						"internalType": "uint256",
+						"name": "numActiveProject",
+						"type": "uint256"
+					},
+					{
+=======
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+						"internalType": "uint8",
+						"name": "class",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					}
+				],
+				"name": "getTasksUser",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "tasks",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_teacher",
+						"type": "address"
+					}
+				],
+				"name": "getTeacherStruct",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numDepartment",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "numSchoolSubjects",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "numLaboratories",
+						"type": "uint16[]"
+					},
+					{
+<<<<<<< HEAD
+						"internalType": "uint256[]",
+						"name": "numActiveProjects",
+						"type": "uint256[]"
+					},
+					{
+=======
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+						"internalType": "bool",
+						"name": "headTeacher",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "scientistManager",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+<<<<<<< HEAD
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					}
+				],
+				"name": "increaceQuantityTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+=======
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+				"inputs": [],
+				"name": "increaseQuantityProjects",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "keys",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_num",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_deadLineTask",
+						"type": "uint256"
+					}
+				],
+				"name": "setDeadLineInProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16[]",
+						"name": "departments",
+						"type": "uint16[]"
+					}
+				],
+				"name": "setDepartments",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "_deadLineTask",
+						"type": "uint256[]"
+					}
+				],
+				"name": "setFullDeadLineInProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "_readyTask",
+						"type": "uint16[]"
+					}
+				],
+				"name": "setFullReadyTaskProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_goal",
+						"type": "string"
+					}
+				],
+				"name": "setGoalInProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16[]",
+						"name": "laboratories",
+						"type": "uint16[]"
+					}
+				],
+				"name": "setLaboratories",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_num_memb",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "_newStudent",
+						"type": "address"
+					}
+				],
+				"name": "setMembersProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+<<<<<<< HEAD
+=======
+						"name": "_goal",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+						"name": "_loginMentor",
+						"type": "string"
+					},
+					{
+<<<<<<< HEAD
+						"internalType": "address[]",
+						"name": "_members",
+						"type": "address[]"
+=======
+						"internalType": "address",
+						"name": "_creator",
+						"type": "address"
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "_needKnowledge",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "setProjectStruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_num",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_readyTask",
+						"type": "uint16"
+					}
+				],
+				"name": "setReadyTaskProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_roleMembers",
+						"type": "string"
+					}
+				],
+				"name": "setRoleMembers",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16[]",
+						"name": "schSubjects",
+						"type": "uint16[]"
+					}
+				],
+				"name": "setSchSubjects",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "enum MakeStruct0.StatusAddress",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "setStatusAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum MakeStruct0.StatusProject",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "setStatusProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+<<<<<<< HEAD
+						"name": "_text",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_numStrongSide",
+						"type": "uint8"
+					}
+				],
+				"name": "setStudentStrongSide",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+=======
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_classLetter",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_class",
+						"type": "uint8"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_pass",
+						"type": "bytes32"
+					}
+				],
+				"name": "setStudentStruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+<<<<<<< HEAD
+=======
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_num",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string",
+						"name": "_tasks",
+						"type": "string"
+					}
+				],
+				"name": "setTaskInProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_teacher",
+						"type": "address"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numDepartment",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "_numSchoolSubjects",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "_numLaboratories",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_pass",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bool",
+						"name": "_headTeacher",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "_scientistManager",
+						"type": "bool"
+					}
+				],
+				"name": "setTeacherStruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MakeStruct0.sol": "MakeStruct0"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+<<<<<<< HEAD
+			"runs": 2000000
+=======
+			"runs": 200
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GlobalStorage.sol": {
+			"keccak256": "0xbe355bc6943beb48dfe999320919d5e6c103e1ae29726ad49ca1d62ec157557a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://664c702e2b277ce1615ea8715dd2664003a5382d5b260ba920a1921d3b813a74",
+				"dweb:/ipfs/QmaTGd8mfHQndtNro99VfFYAJJVb6LXPRDBwTbbj45iMhA"
+			]
+		},
+		"MakeStruct0.sol": {
+<<<<<<< HEAD
+			"keccak256": "0x50b24a2d8c84665f571fed6c4d584221e3a630927a4d3683722194cca0041de0",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://84a7af221863cae8c30503a312bac575b0e0e6646d5c55579face596cd67518b",
+				"dweb:/ipfs/QmdSjjjMYCkXUWHyc7MafZxBCLtWZHDSj9vqmjEjPNaFZ8"
+=======
+			"keccak256": "0x79a24a341eccfc905b4ce65809dbdfcd6bac092507dca83c3f6ff9b2765aaef5",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://90633d8ea0df7fea7bdec8a2456dbf1963927ce9f475f287297a2f41131b48a4",
+				"dweb:/ipfs/QmWiSomp9NvwrNRupwL6f3nzW1Ysb3PaHDv8jDvJCnLu8q"
+>>>>>>> c5d96a4c9c71cde16e513501907eaa83e4a9103a
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,6 @@
+site_name: Проектная деятельность
+nav: 
+    - Основная информация: index.md
+    - Функции: function.md
+    - Номера ошибок: fail.md
+theme: readthedocs

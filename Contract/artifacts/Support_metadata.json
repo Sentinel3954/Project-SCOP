@@ -1,0 +1,229 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_data",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "hero",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "numProject",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					}
+				],
+				"name": "Action",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+<<<<<<< HEAD
+						"internalType": "string",
+						"name": "_nameProject",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numLaboratory",
+						"type": "uint16"
+					}
+				],
+				"name": "_checksForProject",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					}
+				],
+				"name": "_checksForRegistration",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nameProject",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_goal",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "_needKnowledge",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "_mentor",
+						"type": "address"
+					}
+				],
+				"name": "_createProject",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					}
+				],
+				"name": "auth",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+=======
+>>>>>>> 27fe8d059f636b94ab51b864f54125dade45bc73
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					}
+				],
+				"name": "myTransfer",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Support.sol": "Support"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GlobalStorage.sol": {
+<<<<<<< HEAD
+			"keccak256": "0x5ba7c4392f442a47f4214c74c491ac40262d0b9ae35f9735b0846df093d6b7d4",
+			"urls": [
+				"bzz-raw://8abf35a579bb063125055101012e2ecf700257689d3dd8356b1f9fe0a2426515",
+				"dweb:/ipfs/QmXEaP9s81zWyiXBF53XqHEqeH8ufkX1Lt3Ma8t5xRiG49"
+			]
+		},
+		"Support.sol": {
+			"keccak256": "0x61e7dbd0c317621a22740140fcf2d9fc2e4897b45d9a838abea5b0b9227ef171",
+			"urls": [
+				"bzz-raw://09cf0216ca720d8c5764a9b36237591d2aa2377d8a34e32bed73a845f2ae40d7",
+				"dweb:/ipfs/QmWJmzzcBGPX3LkqrLqrNTj5jMrMFGyrk811Qc2acW8z35"
+=======
+			"keccak256": "0x7c9421dcd62c8249ab2074a6d9489190efefd5c915db5d993951c32d7ec8c0ed",
+			"urls": [
+				"bzz-raw://42576a74bf5a78bbe96f77ffbd57a559c04b0a960cb113643277af5d98ac2df7",
+				"dweb:/ipfs/QmPLFck4ZeBj7a4HbyoeCLNztepKaGPqqsB2WN9bKYLGyv"
+			]
+		},
+		"Support.sol": {
+			"keccak256": "0x312a9fb089189a0e6dd437281d69a568127250820674c45599df5d658fbd7f70",
+			"urls": [
+				"bzz-raw://44863805212a6ac4fcf5e0518137a1b495b4d99f5356a70423745234e2ee02c5",
+				"dweb:/ipfs/QmfT8wjETmo7JauiseRzoCC31wXS1VxeJxNNFWqefHukQb"
+>>>>>>> 27fe8d059f636b94ab51b864f54125dade45bc73
+			]
+		}
+	},
+	"version": 1
+}

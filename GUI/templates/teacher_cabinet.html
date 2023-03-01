@@ -1,0 +1,84 @@
+{% extends 'template.html' %}
+
+{% block  title %}
+    <title>Личный кабинет</title>
+{% endblock  %}
+
+{% block content_0 %}
+<div class="head_cab">Личный кабинет учителя
+    <button class="btn btn-secondary btn_ctr ext_btn">X</button>
+</div>
+<div class="main_box_cab">
+        <div class="info_head">Об учителе</div>
+        <div class="info_std">
+            <p>Логин: {{login}}</p>
+            <p>ФИО: {{fio}}</p>
+            <p>Предметы: {{sub}}</p>
+            <p>Лаборатория: {{lab}}</p>
+            <form action="{{url_for('exit')}}" method="post">
+                <button type="submit" class="btn btn-secondary btn_ctr btn_ctr_6">Выход</button>
+            </form>
+            {% for cat, msg in get_flashed_messages(True) %}
+                <div class="{{cat}} status_class_0">{{msg}}</div>
+            {% endfor %}
+        </div>
+
+        <div class="info_head info_head_1">Активные Проекты</div>
+        <div class="info_std aval_proj">
+            {% if projects == [] %}
+            <p>У вас нет доступных проектов</p>
+            {% set clc_r_o = "inp_sd_bl" %}
+            {% set read_only = "readonly" %}
+            {% set btn_dis = "disabled" %}
+            {% endif %}
+            <form action="{{url_for('go_to_look_teacher_project')}}" method="post">
+                {% for i in projects %}
+                    <p value="{{i}}">{{i}}</p>
+                {% endfor %}
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-secondary btn_ctr btn_ctr_6" {{btn_dis}} {{read_only}} >К проектам</button>
+                </div>
+            </form>
+        </div>
+
+
+<div class="info_head info_head_2">Доступные функции</div>
+    <div class="info_std func_stud">
+        <form action="{{url_for('go_to_create_projects_teacher')}}" method="post">
+            <!-- <label class="form-label">Создать проект</label> -->
+            <div class="mb-3">
+                <button type="submit" class="btn btn-secondary btn_ctr btn_ctr_4">Создать проект</button>
+            </div>
+        </form>
+        <br>
+        <form action="{{url_for('create_strong_side')}}" method="post">
+            <!-- <label class="form-label">Добавить сильную сторону</label> -->
+            <div >
+                <!-- <input class="form-control inp_ctr inp_ctr_8" type="text" name="strong_side"> -->
+                <button type="submit" class="btn btn-secondary btn_ctr btn_ctr_5" disabled>Общая информация</button>
+            </div>
+        </form>
+        <form action="{{url_for('go_to_create_projects')}}" method="post">
+            <div class="mb-3">
+                <button type="submit" class="btn btn-secondary btn_ctr btn_ctr_7" disabled>Просмотр активных проектов</button>
+            </div>
+        </form>
+
+        <form action="{{url_for('go_to_create_acc_for_student')}}" method="post">
+            <div class="mb-3">
+                <button type="submit" class="btn btn-secondary btn_ctr btn_ctr_8" disabled>Зарегистрировать учеников</button>
+            </div>
+        </form>
+        <form action="{{url_for('go_to_create_projects')}}" method="post">
+            <div class="mb-3">
+                <button type="submit" class="btn btn-secondary btn_ctr btn_ctr_9" disabled>Просмотр архивных проектов</button>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+</div>
+{% endblock content_0 %}

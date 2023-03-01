@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_data",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_key",
+						"type": "string"
+					}
+				],
+				"name": "getSomeUint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_key",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num",
+						"type": "uint256"
+					}
+				],
+				"name": "setSomeUint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"logic_contr.sol": "LogicSmartContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"et_Storage.sol": {
+			"keccak256": "0x1229bc6b486996a0abaf89062c4393a451104a749e528c51e6c967c8d389cd3a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2e4c10750ec9f6e123e1b8eb4283ac90cb1d6e67073596805849cd539e32f5ca",
+				"dweb:/ipfs/QmTydd5Rc1PocxAfZ7fmikoDHjQXDUJBqcut9vALRu9ort"
+			]
+		},
+		"logic_contr.sol": {
+			"keccak256": "0xa64806f3c400ca33fefa044002ffe253ed38ed4a1ab542111c871d88de053211",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://509bc1019131bda85422268936a9346c747b64f93719b6a17fd5b4d887b954a8",
+				"dweb:/ipfs/QmQDpRMgHFxeEKCRxyTw8SZfYyvP1GgGuDp6TvsYkx5Vgj"
+			]
+		}
+	},
+	"version": 1
+}

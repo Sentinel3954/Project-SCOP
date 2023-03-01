@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Help.sol": "Help"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Help.sol": {
+			"keccak256": "0x00d4ce531c8513b568cc8e928e43c47409bf2fd6a7a8b01535531a8b5f254db7",
+			"urls": [
+				"bzz-raw://23e8ffc4401764e96c4c758f646af07f32600c90e2c1ada0748aa975ab474a86",
+				"dweb:/ipfs/QmSNnpdst2jKE9bGf7K86LD6CBtjN8zttzkJxBwzRRwC8V"
+			]
+		}
+	},
+	"version": 1
+}

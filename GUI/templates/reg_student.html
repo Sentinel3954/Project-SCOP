@@ -1,0 +1,30 @@
+{% extends 'template.html' %}
+
+{% block  title %}
+    <title>Регистрация</title>
+{% endblock  %}
+
+{% block content_0 %}
+<div class="head_box">Регистрация для Учеников
+    <button class="btn btn-secondary btn_ctr ext_btn">X</button>
+</div> 
+<div class="main_box">
+    <form action="{{url_for('reg_student')}}" method="post">
+        <div class="col_0">
+            <input class="form-control inp_col_0 inp_ctr_5" type="text" name="email" placeholder="Email">
+            <input class="form-control inp_col_0 inp_ctr_6" type="password" name="password" placeholder="Password">
+            <p></p>
+            <input class="form-control inp_col_0 inp_ctr_7" type="password" name="rep_password" placeholder="Repeat Password">
+        </div>
+        <div class="col_1">
+            <input class="form-control inp_ctr_5 inp_col_1" type="text" name="fio" placeholder="FIO">
+            <input class="form-control inp_ctr_6 inp_col_1" type="text" name="class" placeholder="Сlass">
+            <input class="form-control inp_ctr_7 inp_col_1" type="text" name="classletter" placeholder="СlassLetter">
+            <button type="submit" class="btn btn-secondary btn_ctr btn_ctr_1">Регистрация</button>
+        </div>
+        {% for cat, msg in get_flashed_messages(True) %}
+            <div class="{{cat}} status_class_0">{{msg}}</div>
+        {% endfor %}
+    </form>
+</div>
+{% endblock content_0 %}

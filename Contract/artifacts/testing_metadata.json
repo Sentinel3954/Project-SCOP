@@ -1,0 +1,172 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_other",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_class",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_classLetter",
+						"type": "string"
+					}
+				],
+				"name": "addStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_otherContract",
+						"type": "address"
+					}
+				],
+				"name": "changeContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					}
+				],
+				"name": "checkStudent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "login",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "FIO",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "classLetter",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "strongSides",
+								"type": "string[]"
+							},
+							{
+								"internalType": "uint8",
+								"name": "class",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "pass",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct Help.Student",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"testing.sol": "testing"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Help.sol": {
+			"keccak256": "0x00d4ce531c8513b568cc8e928e43c47409bf2fd6a7a8b01535531a8b5f254db7",
+			"urls": [
+				"bzz-raw://23e8ffc4401764e96c4c758f646af07f32600c90e2c1ada0748aa975ab474a86",
+				"dweb:/ipfs/QmSNnpdst2jKE9bGf7K86LD6CBtjN8zttzkJxBwzRRwC8V"
+			]
+		},
+		"Help2.sol": {
+			"keccak256": "0x19ea1ab1c5e58547031bcde9a8c8e5c0096bc9c2b24284cbb7cb8b5d63cc510a",
+			"urls": [
+				"bzz-raw://2c943d783b6d627e83fd010c6ddc46ca828b5b8ccea53fc10a3f433848425b9f",
+				"dweb:/ipfs/QmT8PwPXo63p297SeWkKLc5AdnPJeWCaRBTYBXjNaUgNo7"
+			]
+		},
+		"testing.sol": {
+			"keccak256": "0x4858b578eb3ef7a67d7924cac2f386b6b1e63554066b5caa8f83fb5b32590058",
+			"urls": [
+				"bzz-raw://7daaa3eeb8b4a900db12ab8f0226958fe050d370de2125d6304026108d4ae504",
+				"dweb:/ipfs/QmQuY6273npLxMnnZx6WU1zyxsgaGghbLHNujzpqMQ8ZBQ"
+			]
+		}
+	},
+	"version": 1
+}

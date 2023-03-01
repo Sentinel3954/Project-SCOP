@@ -1,0 +1,80 @@
+{% extends 'template.html' %}
+
+{% block  title %}
+    <title>Проект</title>
+{% endblock  %}
+
+{% block content_0 %}
+<div class="head_cab">Управление проектом 
+    <button class="btn btn-secondary btn_ctr ext_btn">X</button>
+</div>
+<div class="main_box_cab main_box_cab_{{len_tasks}}">
+    <div class="info_head info_head_{{len_tasks}}">Информация о проекте</div>
+    <div class="info_std info_std_{{len_tasks}}">
+        <p>Название проекта: {{project_name}}</p>
+        <p>Цель проекта: {{goal_project}}</p>
+        <p>Участники:</p>
+        {%for i in students%}
+            <p>{{i}}</p>
+        {%endfor%}
+        <p>Лаборатория: {{laboratorie}}</p>
+        <p>Куратор: {{tutor}}</p>
+        <p>Роли: </p>
+        {% for cat, msg in get_flashed_messages(True) %}
+            <div class="{{cat}} status_class_0">{{msg}}</div>
+        {% endfor %}
+        <br>
+        <button type="submit" class="btn btn-secondary btn_ctr_01" disabled>Заморозить проект</button><br><br>
+        <button type="submit" class="btn btn-secondary btn_ctr_01" disabled>Завершить проект</button><br><br>
+        <button type="submit" class="btn btn-secondary btn_ctr_01" disabled>Восстановить проект</button>
+    </div>
+<div class="info_head info_head_1 strng_hd strng_hd_0 info_head_{{len_tasks}}">Изменить проект</div>
+    <div class="info_std info_std_{{len_tasks}} strng_sd strng_sd_0">
+
+        <form action="{{url_for('create_strong_side')}}" method="post">
+            <input class = "inp_sd inp_sd_2" placeholder="Роль">
+            <input class = "inp_sd inp_sd_2" placeholder="Логин ученика">
+            <button type="submit" class="btn btn-secondary btn_sd_1">Добавить роль ученику</button>
+        </form>
+        <form action="{{url_for('create_strong_side')}}" method="post">
+            <input class = "inp_sd inp_sd_1" value="{{goal_project}}">
+            <button type="submit" class="btn btn-secondary btn_sd_1">Изменить цель</button>
+        </form>
+        <form action="{{url_for('AddTaskInProjectTeacher')}}" method="post">
+            <input class="inp_sd inp_sd_2" name="task" placeholder="Текст задачи">
+            <input type="date" class="inp_sd inp_sd_2" name="date" placeholder="Срок выполнения">
+            <button type="submit" class="btn btn-secondary btn_sd_1">Добавить задачу</button>
+        </form>
+        <form action="{{url_for('addStudentInProject')}}" method="post">
+            <input class = "inp_sd inp_sd_1" name="login" placeholder="Логин ученика">
+            <button type="submit" class="btn btn-secondary btn_sd_1">Добавить ученика</button>
+        </form>
+
+        <div class="one_task">
+        
+        {%for indexxx, value in task.items()%}
+            {%if value[2]==1 %}
+                {% set clc_r_o = "inp_sd_bl" %}
+                {% set read_only = "readonly" %}
+                {% set btn_dis = "disabled" %}
+                {% set cls_tsk = "frm_tsk_1" %}
+            {%else%}
+                {% set cls_tsk = "frm_tsk_0" %}
+            {% endif %}    
+            <form action="{{url_for('changeTaskInProjectTeacher')}}" method="post">
+            <div class="{{cls_tsk}}">
+                <input class = "inp_sd inp_sd_4 {{clc_r_o}}" name="indexxx" readonly value="{{indexxx}}">
+                <input class = "inp_sd inp_sd_5 {{clc_r_o}}" name="task" {{read_only}} value="{{value[0]}}">
+                <input type="date" class="inp_sd inp_sd_2 {{clc_r_o}}" name="date" {{read_only}} value="{{value[1]}}">
+                <label class="lbl_0">Выполнено</label>
+                <input type="checkbox" name="complete" class="inp_sd inp_sd_3" {{value[2]}}>
+                <button type="submit" class="btn btn-secondary btn_sd_1 btn_sd_2" {{btn_dis}}>Изменить</button>
+            </div>
+            </form>
+        {%endfor%}
+    </div>
+        <br>
+    </div>
+
+</div>
+{% endblock content_0 %}

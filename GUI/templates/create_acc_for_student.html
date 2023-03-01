@@ -1,0 +1,25 @@
+{% extends 'template.html' %}
+
+{% block  title %}
+    <title>Создание кошелек</title>
+{% endblock  %}
+
+{% block content_0 %}
+<div class="head_cab">
+    <button class="btn btn-secondary btn_ctr ext_btn">X</button>
+</div>
+<div class="main_box_cab">
+<div class="info_head info_head_1 strng_hd">Создать кошелек</div>
+    <div class="info_std strng_sd">
+    <form action="{{url_for('create_acc_for_student')}}" method="post">
+        <input class=" inp_sd inp_sd_1" type="text" name="pass_walet" placeholder="Пароль для кошеля">
+        <br>
+        <button type="submit" class="btn btn-secondary btn_sd_0">Создать</button>
+        {% for cat, msg in get_flashed_messages(True) %}
+            <div class="{{cat}} status_class_0">{{msg}}</div>
+        {% endfor %}
+    </form>
+</div>
+</div>
+
+{% endblock content_0 %}

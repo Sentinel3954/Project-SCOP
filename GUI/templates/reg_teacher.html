@@ -1,0 +1,42 @@
+{% extends 'template.html' %}
+
+{% block  title %}
+    <title>Регистрация</title>
+{% endblock  %}
+
+{% block content_0 %}
+    <div class="head_box">Регистрация для Учителей <button class="btn btn-secondary btn_ctr ext_btn">X</button></div> 
+    <div class="main_box">
+    <form action="{{url_for('reg_teacher_check')}}" method="post">
+        <div class="col_0">
+            <input class="form-control  inp_col_0 inp_ctr_5"type="text" name="email" placeholder="Email">
+            <input class="form-control  inp_col_0 inp_ctr_6" type="password" name="password" placeholder="Password">
+            <input class="form-control  inp_col_0 inp_ctr_7" type="password" name="rep_password" placeholder="Repeat Password">
+        </div>
+        <div class="col_1">
+            <input class="form-control  inp_ctr_5 inp_col_1" type="text" name="fio" placeholder="FIO">
+            <select class="form-select inp_ctr_6 inp_col_1" placeholder="Школьный предмет" name="SchoolSubjects">
+                <option class="opt_ctr" style="color:gray" selected disabled>Школьный предмет</option>
+                {% for i, k in subject.items() %}
+                <option value="{{i}}">{{k}}</option>
+                {% endfor %}
+            </select>
+            <select class="form-select  inp_col_1 inp_ctr_7" placeholder="Лаборатории" name="laboratories">
+                <option  class="opt_ctr" style="color:gray" selected disabled>Лаборатории</option>
+                {% for i, k in listt.items() %}
+                <option  value="{{i}}">{{k}}</option>
+                {% endfor %}
+            </select>
+        </div>
+            <button type="submit" class="btn btn-secondary btn_ctr btn_ctr_1">Регистрация</button>
+            {% for cat, msg in get_flashed_messages(True) %}
+                <div class="{{cat}} status_class_0">{{msg}}</div>
+            {% endfor %}
+        </div>
+    </form>
+    </div>
+</body>
+
+
+
+{% endblock content_0 %}

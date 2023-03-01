@@ -1,0 +1,694 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "hero",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "numProject",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					}
+				],
+				"name": "Action",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "_findActiveProject",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "activeProject",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "_findProjects",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "namesProjects",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nameProject",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_goal",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "_needKnowledge",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "_mentor",
+						"type": "address"
+					}
+				],
+				"name": "addProject",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					}
+				],
+				"name": "addProjectUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+<<<<<<< HEAD
+					},
+					{
+						"internalType": "enum GlobalStorage.StatusAddress",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"name": "changeStatusAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "changeStatusEmail",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bool",
+						"name": "newStatus",
+						"type": "bool"
+					}
+				],
+				"name": "changeStatusEmail",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+=======
+>>>>>>> 27fe8d059f636b94ab51b864f54125dade45bc73
+					}
+				],
+				"name": "checkAdmin",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "FIO",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+<<<<<<< HEAD
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "checkEmail",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+=======
+>>>>>>> 27fe8d059f636b94ab51b864f54125dade45bc73
+				"inputs": [],
+				"name": "checkLengthDepartments",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkLengthLaboratories",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkLengthSchoolSubjects",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "checkLogin",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "checkNumbersProject",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "numProjects",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+<<<<<<< HEAD
+				"name": "checkPassAdmin",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+=======
+>>>>>>> 27fe8d059f636b94ab51b864f54125dade45bc73
+				"name": "checkPassStudent",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+<<<<<<< HEAD
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "checkPassTeacher",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+=======
+>>>>>>> 27fe8d059f636b94ab51b864f54125dade45bc73
+						"internalType": "uint256",
+						"name": "_numProject",
+						"type": "uint256"
+					}
+				],
+				"name": "checkProject",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "goal",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "mentor",
+						"type": "address"
+					},
+					{
+						"internalType": "address[]",
+						"name": "members",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "needKnowledge",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "enum GlobalStorage.StatusProject",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string[]",
+						"name": "task",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "role",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "checkStatusAddress",
+				"outputs": [
+					{
+						"internalType": "enum GlobalStorage.StatusAddress",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_student",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "checkStudent",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "login",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "FIO",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "classLetter",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							},
+							{
+								"internalType": "string[]",
+								"name": "strongSides",
+								"type": "string[]"
+							},
+							{
+								"internalType": "uint8",
+								"name": "class",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "pass",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct GlobalStorage.Student",
+						"name": "",
+						"type": "tuple"
+					},
+					{
+						"internalType": "string",
+						"name": "nameActiveProject",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "goal",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "role",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "laboratory",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "tasks",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "namesOtherProject",
+						"type": "string[]"
+					},
+					{
+						"internalType": "address",
+						"name": "teacher",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_key",
+						"type": "bytes32"
+					}
+				],
+				"name": "checkTeacher",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "string[]",
+						"name": "nameLaboratories",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "knowSubjects",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string[]",
+						"name": "namesActiveProjects",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "departments",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "laboratories",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "schoolSubjects",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"GlobalStorage.sol": "GlobalStorage"
+		},
+<<<<<<< HEAD
+		"evmVersion": "byzantium",
+=======
+		"evmVersion": "london",
+>>>>>>> 27fe8d059f636b94ab51b864f54125dade45bc73
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+<<<<<<< HEAD
+			"enabled": true,
+=======
+			"enabled": false,
+>>>>>>> 27fe8d059f636b94ab51b864f54125dade45bc73
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GlobalStorage.sol": {
+<<<<<<< HEAD
+			"keccak256": "0x6ef58ea7b6c19d23f2e6758620b3960dabcb5d534db0e2e9b7d9d3dd314edc0b",
+			"urls": [
+				"bzz-raw://dddeac1655683064c092964d20d55c808bf348b03b1655abd73fef15ef9ab697",
+				"dweb:/ipfs/QmUvuS6gfp1ur8Ya7g2UfzmFxYN9t14QPCx2Afh38aXvER"
+=======
+			"keccak256": "0x737e82b81a60dc508e85394c28eb558dda422aa421655eb91e5a636ecbbec383",
+			"urls": [
+				"bzz-raw://e6207ddbc9ed68f610e4eb1d7aca09af9da99deef924a3c348c82a60cd68bdbf",
+				"dweb:/ipfs/QmTa9My42kf62iw6LJ4wM6zieq6cWnkL7qb46zPg75y2aR"
+>>>>>>> 27fe8d059f636b94ab51b864f54125dade45bc73
+			]
+		}
+	},
+	"version": 1
+}

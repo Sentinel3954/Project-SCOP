@@ -1,0 +1,871 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_dataContract",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_structs",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "hero",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "target",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint16",
+						"name": "numProject",
+						"type": "uint16"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					}
+				],
+				"name": "Action",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+<<<<<<< HEAD
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "CheckRegister",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numProject",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "addressStudent",
+						"type": "address"
+					}
+				],
+=======
+						"internalType": "uint16",
+						"name": "_numProject",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "addressStudent",
+						"type": "address"
+					}
+				],
+>>>>>>> e92265b30ab086fe32028c67497a0a3d05936434
+				"name": "addStudentInProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "auth",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "a",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_num_proj",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_status",
+						"type": "uint16"
+					}
+				],
+				"name": "changeStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_num_proj",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string",
+						"name": "_newTask",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_date",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_num_task",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_ready",
+						"type": "uint16"
+					}
+				],
+				"name": "changeTaskInProjectTeacher",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkMyActiveProject",
+				"outputs": [
+					{
+						"internalType": "uint16[]",
+						"name": "activeProject",
+						"type": "uint16[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkNumAllActiveProject",
+				"outputs": [
+					{
+						"internalType": "uint16[]",
+						"name": "activeProject",
+						"type": "uint16[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "checkNumArhiveProject",
+				"outputs": [
+					{
+						"internalType": "uint16[]",
+						"name": "archiveProject",
+						"type": "uint16[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "checkProject",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "goal",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mentor",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "status",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string[]",
+						"name": "tasksMembers",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "roleMembers",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numActiveProject",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_num",
+						"type": "uint16"
+					}
+				],
+				"name": "checkProjectNum",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "goal",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "mentor",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numLaboratory",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "status",
+						"type": "uint16"
+					},
+					{
+						"internalType": "string[]",
+						"name": "tasksMembers",
+						"type": "string[]"
+					},
+					{
+						"internalType": "string",
+						"name": "roleMembers",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+<<<<<<< HEAD
+						"internalType": "uint16",
+						"name": "_num",
+						"type": "uint16"
+					}
+				],
+				"name": "checkTaskDeadline",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "tasksMembers",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "deadLine",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "ready",
+						"type": "uint16[]"
+=======
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "checkRegister",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+>>>>>>> e92265b30ab086fe32028c67497a0a3d05936434
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_num",
+						"type": "uint16"
+					}
+				],
+				"name": "checkTaskDeadline",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "tasksMembers",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "deadLine",
+						"type": "uint256[]"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "ready",
+						"type": "uint16[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_teacher",
+						"type": "address"
+					}
+				],
+				"name": "checkTeacher",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numDepartment",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "numSchoolSubjects",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "numLaboratories",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_pass",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bool",
+						"name": "headTeacher",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "scientistManager",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "constructData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_nameProject",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numLaboratory",
+						"type": "uint16"
+					}
+				],
+				"name": "createProjectForTeacher",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numProject",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "addressStudent",
+						"type": "address"
+					}
+				],
+				"name": "deleteStudentOutProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_newStudent",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass_user",
+						"type": "string"
+					}
+				],
+				"name": "generateAddressForStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_teacher",
+						"type": "address"
+					}
+				],
+				"name": "checkTeacher",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "numDepartment",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "numSchoolSubjects",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "numLaboratories",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_pass",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bool",
+						"name": "headTeacher",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "scientistManager",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "constructData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_nameProject",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numLaboratory",
+						"type": "uint16"
+					}
+				],
+				"name": "createProjectForTeacher",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_numProject",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "addressStudent",
+						"type": "address"
+					}
+				],
+				"name": "deleteStudentOutProject",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_newStudent",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass_user",
+						"type": "string"
+					}
+				],
+				"name": "generateAddressForStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					}
+				],
+				"name": "myTransfer",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_login",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_pass",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_FIO",
+						"type": "string"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "_leadsSchoolSubjects",
+						"type": "uint16[]"
+					},
+					{
+						"internalType": "uint16[]",
+						"name": "_laboratories",
+						"type": "uint16[]"
+					}
+				],
+				"name": "registrationForTeacher",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Teacher.sol": "Teacher"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"GlobalStorage.sol": {
+<<<<<<< HEAD
+			"keccak256": "0xb425a743e7638f9369ac5cd3e03feb4a387792f52e5b0402010bd2669d28d6ef",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://84bd4ccc12f2fc4c76be719f6904aa9d9527ba30bc48cb7c7baa2fc4b702bff1",
+				"dweb:/ipfs/QmbgWmCMRDXiKrhRCrpcFStKoXaeQFWvf6xN68ir7tvCwU"
+			]
+		},
+		"MakeStruct.sol": {
+			"keccak256": "0xb081ed15c0eead46142c0c05a22186bf1bbe5be278f6f00a751e5b36efbe082b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d32fba8b9bb2f3cb43d490cbf9759dfb0f6fb81c6cc0608bf7c5141aa76b11e3",
+				"dweb:/ipfs/QmcDNZxjD5RxeGYJwyfMAzbLSLtqW3ih45fGJtqrSM2HkE"
+			]
+		},
+		"Support.sol": {
+			"keccak256": "0x2bdb828de8ea4e2ec1c32cb6c45769a87316152fe1f7aafbccca4ebf497f0f07",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://decac776144af17331e76dff4bc38ce1a9555f9faa9582c0f232d609215f019f",
+				"dweb:/ipfs/QmSEUuxefA7CjpCPMmtr5b8gCAF8yCHkhchzjpwJkK1dgc"
+=======
+			"keccak256": "0xde5809dc9ce3410f978e454549702b917d64943e1842a5e4ff5d79fc0bf359a8",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://dacc973bc3873e5f5bc25e064e74c9e5a45ad8757c25b2a86b7aa6f19f433099",
+				"dweb:/ipfs/QmRKMPP34BWWd5php8s8YWgpk7pCzSWNbAqJ5BMNMuJDHL"
+			]
+		},
+		"MakeStruct.sol": {
+			"keccak256": "0x585bcf7bbc9d762ff40611abac719ef60c279d054033969d1f1e86273e09c94e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3595a543fc1d248d98a582d9e0c7a03fb0061afafcfd2c2dc0d29cad3cfe147e",
+				"dweb:/ipfs/QmQvPhSpw2jBwLRi8M5krZYMENzJFw2mBq4gcgnV3x2wdJ"
+			]
+		},
+		"Support.sol": {
+			"keccak256": "0x533551490b72c87c7cd318ee39cc4dd565589cd10e12c6d4607e41c00455baa7",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://5d14283ad92ae7d24f9441baa4259cb65b8f02903d541f3632342f23358593a6",
+				"dweb:/ipfs/QmPNi9AD7SGvvGcG5TKMZwwhdXNemxNUXvotfkmzNheh8e"
+>>>>>>> e92265b30ab086fe32028c67497a0a3d05936434
+			]
+		},
+		"Teacher.sol": {
+			"keccak256": "0xa9744c05ac74ac8e0fe9093201a853fe4dd54ed54f065a5f2981fd0e9d24059e",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1106e2076f06f7388a02c2a83576dffae254ff7931c6820d6abce2dc51dc755c",
+				"dweb:/ipfs/QmUrcdXw7vRSuVTqeyaJX1268CqybRhjFGyps6ukww1hqZ"
+			]
+		}
+	},
+	"version": 1
+}
